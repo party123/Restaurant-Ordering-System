@@ -1,0 +1,415 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\server.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\server.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 server"
+FONT 12, "楷体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "点餐系统服务器端 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2015 李笑月",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SERVER_DIALOG DIALOGEX 0, 0, 166, 114
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "server"
+MENU IDR_MENU1
+FONT 12, "楷体"
+BEGIN
+    PUSHBUTTON      "发送测试",IDC_BUTTON1,115,7,44,16,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "关闭通信",IDC_close,66,33,41,26
+    PUSHBUTTON      "开启通信",IDC_BUTTON2,16,34,40,26
+    EDITTEXT        IDC_EDIT1,22,80,81,16,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_caipinleixingDlg DIALOG DISCARDABLE  0, 0, 253, 171
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "菜品类型维护"
+FONT 12, "楷体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,170,13,35,14
+    LTEXT           "关键字",IDC_STATIC,14,14,27,15
+    EDITTEXT        IDC_EDIT1,44,13,42,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_search,95,13,25,14
+    PUSHBUTTON      "刷新",IDC_flash,129,13,31,14
+    PUSHBUTTON      "添加",IDC_add,118,103,37,13
+    PUSHBUTTON      "删除",IDC_delete,162,103,36,13
+    PUSHBUTTON      "修改",IDC_update,206,103,32,13
+    LTEXT           "菜品类型",IDC_STATIC,132,78,35,10
+    EDITTEXT        IDC_EDIT2,179,76,44,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,16,42,93,122
+    EDITTEXT        IDC_EDIT4,136,104,6,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+IDD_adminDlg DIALOG DISCARDABLE  0, 0, 307, 147
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "管理员维护"
+FONT 12, "楷体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,239,105,35,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,7,102,133
+    EDITTEXT        IDC_name,158,7,60,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_usr,158,26,60,12,ES_AUTOHSCROLL
+    LTEXT           "用户姓名",IDC_STATIC,114,9,38,11
+    LTEXT           "用户名",IDC_STATIC,117,29,26,9
+    LTEXT           "密码",IDC_STATIC,119,68,24,9
+    LTEXT           "重复密码",IDC_STATIC,113,85,37,15
+    EDITTEXT        IDC_pwd,159,66,58,11,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_pwd2,160,86,56,12,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "保存添加",IDC_add,239,13,37,13
+    PUSHBUTTON      "保存修改",IDC_update,239,37,36,14
+    PUSHBUTTON      "删除",IDC_delete,239,61,35,13
+    LTEXT           "备注：修改信息时记得填写密码后再按保存",IDC_STATIC,116,
+                    104,104,36
+    PUSHBUTTON      "刷新",IDC_flash,239,82,34,13
+    EDITTEXT        IDC_EDIT1,251,108,14,6,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+IDD_caipin DIALOG DISCARDABLE  0, 0, 325, 159
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "菜品维护"
+FONT 12, "楷体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,285,131,33,11
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,38,120,114
+    PUSHBUTTON      "添加",IDC_add,146,131,34,11
+    PUSHBUTTON      "修改",IDC_update,195,131,34,11
+    PUSHBUTTON      "删除",IDC_delete,244,131,31,11
+    LTEXT           "关键词",IDC_STATIC,18,15,29,9
+    EDITTEXT        IDC_keyword,46,14,41,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_search,97,14,26,15
+    PUSHBUTTON      "刷新",IDC_flash,132,14,22,16
+    LTEXT           "菜品名",IDC_STATIC,149,67,37,11
+    LTEXT           "价格",IDC_STATIC,150,89,36,12
+    EDITTEXT        IDC_name,196,66,57,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_price,197,90,57,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1,140,16,6,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT2,195,42,58,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+IDD_tableDlg DIALOG DISCARDABLE  0, 0, 187, 131
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "餐桌维护"
+FONT 12, "楷体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,7,77,117
+    LTEXT           "桌号",IDC_STATIC,99,20,29,11
+    EDITTEXT        IDC_EDIT1,137,19,24,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_add,121,42,29,15
+    PUSHBUTTON      "删除",IDC_delete,120,67,29,15
+    PUSHBUTTON      "刷新",IDC_flash,120,94,30,15
+    EDITTEXT        IDC_EDIT2,124,97,16,10,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+IDD_DLdlg DIALOG DISCARDABLE  0, 0, 187, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录窗口"
+FONT 12, "楷体"
+BEGIN
+    DEFPUSHBUTTON   "登录",IDOK,26,82,50,14
+    PUSHBUTTON      "退出",IDCANCEL,91,81,50,14
+    LTEXT           "用户名",IDC_STATIC,21,24,33,8
+    LTEXT           "密码",IDC_STATIC,21,49,33,12
+    EDITTEXT        IDC_EDIT1,57,24,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,56,48,61,12,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_jiesuanDlg DIALOG DISCARDABLE  0, 0, 187, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "结算"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "结算",IDC_Btjiesuan,105,18,26,17
+    COMBOBOX        IDC_COMBO1,53,22,43,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "桌号",IDC_STATIC,22,23,24,13
+    LTEXT           "共计",IDC_STATIC,26,49,21,11
+    EDITTEXT        IDC_EDIT1,54,47,38,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "元",IDC_STATIC,96,48,18,13
+    PUSHBUTTON      "刷新",IDC_BUTTON1,140,19,31,16
+END
+
+IDD_chazhang DIALOG DISCARDABLE  0, 0, 249, 136
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "历史账单查询"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "查询",IDC_search,170,16,34,14
+    EDITTEXT        IDC_EDIT1,104,15,43,15,ES_AUTOHSCROLL
+    LTEXT           "请输入订单号",IDC_STATIC,17,15,72,9
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "server Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "server\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "server.EXE\0"
+            VALUE "ProductName", "server 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 159
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_caipinleixingDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_adminDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_caipin, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_tableDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_DLdlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_jiesuanDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_chazhang, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 242
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 129
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "系统设置"
+    BEGIN
+        MENUITEM "菜品类型维护",                ID_MENUcaipinleixing
+        MENUITEM "菜品维护",                    ID_MENUcaipin
+        MENUITEM "管理员维护",                  ID_MENUadmin
+        MENUITEM "餐桌维护",                    ID_MENUtable
+    END
+    POPUP "结算"
+    BEGIN
+        MENUITEM "结算打印",                    ID_MENUjiesuan
+        MENUITEM "历史账单查询",                ID_MENUchazhang
+    END
+    MENUITEM "关于",                        ID_MENUabout
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 server(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\server.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

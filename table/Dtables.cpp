@@ -1,0 +1,27 @@
+// Dtables.cpp: implementation of the CDtables class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "table.h"
+#include "Dtables.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CDtables::CDtables()
+{
+
+}
+
+CDtables::~CDtables()
+{
+
+}

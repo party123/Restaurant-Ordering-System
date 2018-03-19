@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: kitchen - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\lxy\AppData\Local\Temp\RSP7CF2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/kitchen.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\lxy\Desktop\µã²ÍÏµÍ³\kitchen\kitchenDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\lxy\AppData\Local\Temp\RSP7CF2.tmp" 
+Creating temporary file "C:\Users\lxy\AppData\Local\Temp\RSP7CF3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/kitchen.pdb" /debug /machine:I386 /out:"Debug/kitchen.exe" /pdbtype:sept 
+".\Debug\ADOconn.obj"
+".\Debug\kitchen.obj"
+".\Debug\kitchenDlg.obj"
+".\Debug\KitchenSocket.obj"
+".\Debug\StdAfx.obj"
+".\Debug\kitchen.res"
+]
+Creating command line "link.exe @C:\Users\lxy\AppData\Local\Temp\RSP7CF3.tmp"
+<h3>Output Window</h3>
+Compiling...
+kitchenDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+kitchen.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
